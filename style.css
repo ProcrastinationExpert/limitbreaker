@@ -1,0 +1,42 @@
+:root {
+  --bckg: #000000;
+  --txtcolor: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: block;
+  font-family: "Poppins", "Times New Roman";
+  color: var(--txtcolor);
+  background-color: var(--bckg);
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  height: fit-content;
+}
+
+.title {
+  margin: 0 auto;
+  background-color: #1b1b1b;
+  font-size: 30px;
+  text-align: center;
+  padding: 8px 20px;
+  height: fit-content;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.text-inside {
+  margin-top: 20px;
+}
+
+.text-inside p {
+  text-align: center;
+}
