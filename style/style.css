@@ -24,19 +24,25 @@ body {
 
 .title {
   margin: 0 auto;
-  background-color: #1b1b1b;
+  background-color: #101010;
   font-size: 30px;
   text-align: center;
   padding: 8px 20px;
   height: fit-content;
   border-radius: 10px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .text-inside {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .text-inside p {
   text-align: center;
+}
+
+#librecover {
+  display: block;
+  width: min(15em, 100%);
+  margin: 80px auto;
 }
