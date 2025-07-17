@@ -1,1 +1,4 @@
-// Masih kosong, adminnya belum belajar 😂
+const librecover = document.getElementById("librecover");
+librecover.addEventListener("click", () => {
+  alert("Still on going bro!");
+});

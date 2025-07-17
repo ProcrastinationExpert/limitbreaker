@@ -30,6 +30,7 @@ body {
   padding: 8px 20px;
   height: fit-content;
   border-radius: 10px;
+  font-weight: 500;
   margin-top: 20px;
 }
 
@@ -43,6 +44,57 @@ body {
 
 #librecover {
   display: block;
-  width: min(15em, 100%);
+  width: min(250px, 100%);
+  aspect-ratio: 1/1;
+  object-fit: cover;
   margin: 80px auto;
+  border-radius: 14px;
+  transition: transform 0.3s;
+}
+
+#librecover:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.icons-interactable {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icons-interactable div {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.icons-interactable a {
+  display: flex;
+  align-items: center;
+  padding: 6px 16px;
+  height: 40px;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--txtcolor);
+}
+
+#btn {
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 14px;
+  transition: 0.2s border;
+}
+
+#btn:hover {
+  border: 1px solid #ffffff;
 }
