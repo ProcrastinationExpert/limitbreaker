@@ -19,6 +19,7 @@
     <title>Limit Breaker Minecraft Server</title>
   </head>
   <body>
+    <script src="scripts/mcserverstatus.js"></script>
     <div class="nav">
       <h1 class="title">Limit Breaker Minecraft Website</h1>
     </div>
@@ -32,6 +33,9 @@
       <div class="mc-server-status-card">
         <h3>Server Status</h3>
         <div class="mc-server-placeholder">
+          <div id="loading-display-card">
+            <p>Loading...</p>
+          </div>
           <div class="server-stat-card">
             <h3>Java</h3>
             <p>
@@ -41,27 +45,25 @@
             <p>Player Count: <span class="player-count java">?/?</span></p>
             <p>Version: <span class="version java">?</span></p>
             <p>Hostnames: <span class="hostname java">?</span></p>
-            <p>IP address: <span class="ipaddress java">?</span></p>
             <p>Port: <span class="port java">?</span></p>
           </div>
           <div class="server-stat-card">
             <h3>Bedrock</h3>
             <p>
               Connection Status:
-              <span class="mc-server-status java">Unknown</span>
+              <span class="mc-server-status bedrock">Unknown</span>
             </p>
             <p>Player Count: <span class="player-count bedrock">?/?</span></p>
             <p>Version: <span class="version bedrock">?</span></p>
             <p>Gamemode: <span class="gamemode bedrock">Unknown</span></p>
-            <p>Hostnames: <span class="hostname java">?</span></p>
-            <p>IP address: <span class="ipaddress java">?</span></p>
-            <p>Port: <span class="port java">?</span></p>
+            <p>Hostnames: <span class="hostname bedrock">?</span></p>
+            <p>Port: <span class="port bedrock">?</span></p>
           </div>
         </div>
       </div>
       <div class="mc-server-status-card">
-        <div id="refreshBtn">
-          <a href="https://google.com">Refresh</a>
+        <div id="refreshBtn" onclick="refreshStatus()">
+          <a href="#">Refresh</a>
           <span class="material-symbols-outlined">refresh</span>
         </div>
       </div>
