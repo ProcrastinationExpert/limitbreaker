@@ -19,7 +19,9 @@
     <title>Limit Breaker Minecraft Server</title>
   </head>
   <body>
-    <script src="scripts/mcserverstatus.js"></script>
+    <div class="loading-display-card">
+      <p>Loading...</p>
+    </div>
     <div class="nav">
       <h1 class="title">Limit Breaker Minecraft Website</h1>
     </div>
@@ -33,10 +35,7 @@
       <div class="mc-server-status-card">
         <h3>Server Status</h3>
         <div class="mc-server-placeholder">
-          <div id="loading-display-card">
-            <p>Loading...</p>
-          </div>
-          <div class="server-stat-card">
+          <div class="server-stat-card java">
             <h3>Java</h3>
             <p>
               Connection Status:
@@ -47,7 +46,7 @@
             <p>Hostnames: <span class="hostname java">?</span></p>
             <p>Port: <span class="port java">?</span></p>
           </div>
-          <div class="server-stat-card">
+          <div class="server-stat-card bedrock">
             <h3>Bedrock</h3>
             <p>
               Connection Status:
@@ -63,10 +62,11 @@
       </div>
       <div class="mc-server-status-card">
         <div id="refreshBtn" onclick="refreshStatus()">
-          <a href="#">Refresh</a>
+          <a href="#" id="refreshBtnText">Refresh</a>
           <span class="material-symbols-outlined">refresh</span>
         </div>
       </div>
     </div>
+    <script src="scripts/mcserverstatus.js"></script>
   </body>
 </html>

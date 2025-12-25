@@ -1,6 +1,6 @@
 :root {
   --validserverstatuscolor: #1a9c00;
-  --invalidserverstatuscolor: #9c0000;
+  --invalidserverstatuscolor: #c70000;
   --unknownserverstatuscolor: #9b9b9b;
 }
 
@@ -89,8 +89,8 @@
   color: #1a1a1a;
 }
 
-#loading-display-card {
-  display: flex;
+.loading-display-card {
+  display: none;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -100,5 +100,4 @@
   left: 0;
   background-color: #202020f1;
   border-radius: 10px;
-  display: none;
 }
