@@ -1,6 +1,7 @@
 :root {
-  --bckg: #000000;
-  --txtcolor: #ffffff;
+  --bckg: #080808;
+  --txtcolor: #dadada;
+  --placeholder: #1a1a1a;
 }
 
 * {
@@ -22,10 +23,13 @@ body {
   height: fit-content;
 }
 
+h1 {
+  font-size: 30px;
+}
+
 .title {
   margin: 0 auto;
-  background-color: #101010;
-  font-size: 30px;
+  background-color: var(--placeholder);
   text-align: center;
   padding: 8px 20px;
   height: fit-content;
@@ -87,6 +91,23 @@ footer {
   gap: 10px;
   text-decoration: none;
   color: var(--txtcolor);
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--placeholder);
+  width: max-content;
+  max-width: 80%;
+  height: max-content;
+  padding-block: 16px;
+  padding-inline: 18px;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.placeholder.centered {
+  margin-inline: auto;
 }
 
 #btn {

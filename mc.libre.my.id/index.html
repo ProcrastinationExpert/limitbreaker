@@ -1,11 +1,72 @@
 <!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="styles/style2.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=refresh"
+    />
     <title>Limit Breaker Minecraft Server</title>
   </head>
   <body>
-    <h1>Limit Breaker Minecraft Website</h1>
+    <div class="loading-display-card">
+      <p>Loading...</p>
+    </div>
+    <div class="nav">
+      <h1 class="title">Limit Breaker Minecraft Website</h1>
+    </div>
+    <div class="placeholder centered">
+      <p>You can join the server to play with us!</p>
+    </div>
+    <div class="placeholder centered" id="mc-server-config-placeholder">
+      <h3 id="status-title">
+        Server Hostname: mc.libre.my.id (Java) or servermc.libre.my.id (Bedrock)
+      </h3>
+      <div class="mc-server-status-card">
+        <h3>Server Status</h3>
+        <div class="mc-server-placeholder">
+          <div class="server-stat-card java">
+            <h3>Java</h3>
+            <p>
+              Connection Status:
+              <span class="mc-server-status java">Unknown</span>
+            </p>
+            <p>Player Count: <span class="player-count java">?/?</span></p>
+            <p>Version: <span class="version java">?</span></p>
+            <p>Hostnames: <span class="hostname java">?</span></p>
+            <p>Port: <span class="port java">?</span></p>
+          </div>
+          <div class="server-stat-card bedrock">
+            <h3>Bedrock</h3>
+            <p>
+              Connection Status:
+              <span class="mc-server-status bedrock">Unknown</span>
+            </p>
+            <p>Player Count: <span class="player-count bedrock">?/?</span></p>
+            <p>Version: <span class="version bedrock">?</span></p>
+            <p>Gamemode: <span class="gamemode bedrock">Unknown</span></p>
+            <p>Hostnames: <span class="hostname bedrock">?</span></p>
+            <p>Port: <span class="port bedrock">?</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="mc-server-status-card">
+        <div id="refreshBtn" onclick="refreshStatus()">
+          <a href="#" id="refreshBtnText">Refresh</a>
+          <span class="material-symbols-outlined">refresh</span>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/mcserverstatus.js"></script>
   </body>
 </html>
