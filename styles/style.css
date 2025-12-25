@@ -54,6 +54,7 @@ h1 {
   margin: 80px auto;
   border-radius: 14px;
   transition: transform 0.3s;
+  cursor: pointer;
 }
 
 #librecover:hover {
