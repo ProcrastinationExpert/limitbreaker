@@ -26,7 +26,6 @@ async function getStatus(type) {
   const connElement = document.querySelector(`.mc-server-status.${type}`);
   const playerCountElement = document.querySelector(`.player-count.${type}`);
   const versionElement = document.querySelector(`.version.${type}`);
-  const hostnameElement = document.querySelector(`.hostname.${type}`);
   const portElement = document.querySelector(`.port.${type}`);
   let gamemodeElement = null;
   if (type == "bedrock") {
@@ -54,7 +53,6 @@ async function getStatus(type) {
       .getPropertyValue("--validserverstatuscolor");
     playerCountElement.textContent = `${data["players"]["online"]}/${data["players"]["max"]}`;
     versionElement.textContent = data["version"];
-    hostnameElement.textContent = data["hostname"];
     portElement.textContent = data["port"];
   } else {
     connElement.style.color = window
@@ -69,7 +67,6 @@ async function getStatus(type) {
         .getComputedStyle(rootElement)
         .getPropertyValue("--unknownserverstatuscolor");
     }
-    hostnameElement.textContent = "?";
     portElement.textContent = "?";
   }
 
