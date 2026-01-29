@@ -36,7 +36,7 @@ h1 {
   text-align: center;
   padding: 8px 20px;
   height: fit-content;
-  border-radius: 10px;
+  width: 100%;
   font-weight: 500;
   margin-top: 20px;
 }
