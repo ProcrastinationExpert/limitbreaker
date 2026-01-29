@@ -1,7 +1,9 @@
 :root {
   --bckg: #080808;
   --txtcolor: #dadada;
-  --placeholder: #1a1a1a;
+  --placeholder: #222222;
+  --body-font-size: 18px;
+  --btn-color: #111111;
 }
 
 * {
@@ -14,6 +16,7 @@ body {
   font-family: "Poppins", "Times New Roman";
   color: var(--txtcolor);
   background-color: var(--bckg);
+  font-size: var(--body-font-size);
   box-sizing: border-box;
   width: 100%;
 }
@@ -75,6 +78,7 @@ footer {
 .icons-interactable {
   display: flex;
   align-items: center;
+  margin-top: 20px;
   gap: 20px;
 }
 
@@ -84,15 +88,14 @@ footer {
   align-items: center;
 }
 
-.icons-interactable a {
+/* .icons-interactable a {
   display: flex;
   align-items: center;
-  padding: 6px 16px;
-  height: 40px;
+  min-height: 40px;
   gap: 10px;
   text-decoration: none;
   color: var(--txtcolor);
-}
+} */
 
 .placeholder {
   display: flex;
@@ -111,12 +114,35 @@ footer {
   margin-inline: auto;
 }
 
-#btn {
-  border: 1px solid rgba(0, 0, 0, 0);
-  border-radius: 14px;
-  transition: 0.2s border;
+.centered {
+  margin: auto;
 }
 
-#btn:hover {
+.btn {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  gap: 10px;
+  padding: 6px 16px;
+  text-decoration: none;
+  color: var(--txtcolor);
+  border: 1px solid rgb(20, 20, 20);
+  background-color: var(--btn-color);
+  border-radius: 14px;
+  transition:
+    0.2s border ease-in-out,
+    0.2s transform ease-in-out;
+  font-size: 16px;
+}
+
+.btn:hover {
   border: 1px solid #ffffff;
+  transform: translateY(-5px);
+}
+
+#navtoappbtn {
+  margin-block: 20px;
+  width: fit-content;
+  height: 30px;
+  display: flex;
 }
